@@ -14,7 +14,7 @@ from pathlib import Path
 import os
 import dj_database_url
 if os.path.isfile('env.py'):
-    import env
+    import env  # noqa
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -131,7 +131,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATICFILES_STORAGE = 'cloudinary_storage.storage.StaticHashedCloudinaryStorage'
-STATICFILES_DIRS =  [os.path.join(BASE_DIR, 'static')]
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 MEDIA_URL = '/media/'

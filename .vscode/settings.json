@@ -1,24 +1,68 @@
 {
-   "python.linting.pylintEnabled": false,
-   "python.linting.enabled": true,
-   "python.linting.pycodestyleEnabled": false,
-   "python.linting.flake8Enabled": true,
-   "python.terminal.activateEnvironment": false,
-   "files.exclude": {
-      "**/.DS_Store": true,
-      "**/.git": true,
-      "**/.github": true,
-      "**/.gitp*": true,
-      "**/.hg": true,
-      "**/.svn": true,
-      "**/.vscode": true,
-      "**/core.Microsoft*": true,
-      "**/core.mongo*": true,
-      "**/core.python*": true,
-      "**/CVS": true
-   },
-   "files.autoSave": "off",
-   "workbench.colorTheme": "Abyss",
-   "terminal.integrated.gpuAcceleration": "canvas",
-   "editor.defaultFormatter": "HookyQR.beautify"
+    "python.linting.pylintEnabled": false,
+    "python.linting.enabled": true,
+    "python.linting.pycodestyleEnabled": false,
+    "python.linting.flake8Enabled": true,
+    "python.terminal.activateEnvironment": false,
+    "files.exclude": {
+        "**/.DS_Store": true,
+        "**/.git": true,
+        "**/.github": true,
+        "**/.gitp*": true,
+        "**/.hg": true,
+        "**/.svn": true,
+        "**/.vscode": true,
+        "**/core.Microsoft*": true,
+        "**/core.mongo*": true,
+        "**/core.python*": true,
+        "**/CVS": true
+    },
+    "files.autoSave": "off",
+    "workbench.colorTheme": "Abyss",
+    "terminal.integrated.gpuAcceleration": "canvas",
+    "editor.defaultFormatter": "HookyQR.beautify",
+    "[django-html]": {
+        "editor.defaultFormatter": "HookyQR.beautify",
+        "editor.quickSuggestions": {
+            "comments": true,
+            "other": true,
+            "strings": true
+        },
+        "editor.tabSize": 4,
+        "editor.wordWrap": "on",
+        "editor.wordWrapColumn": 80
+    },
+    "beautify.config": {
+        "django-html.format.wrapLineLength": 80
+    },
+    "beautify.language": {
+        "html": [
+            "html",
+            "django-html"
+        ]
+    },
+    "editor.formatOnSave": true,
+    "emmet.includeLanguages": {
+        "django-html": "html"
+    },
+    "files.associations": {
+        "**/templates/**/*.html": "django-html"
+    },
+    "html-css-class-completion.HTMLLanguages": [
+        "django-html"
+    ],
+    "python.formatting.blackArgs": [
+        "--line-length=79"
+    ],
+    "python.formatting.provider": "black",
+    "python.linting.pylintArgs": [
+        "--disable=C0114, W0222",
+        "--load-plugins=pylint_django",
+        "--load-plugins=pylint_django.checkers.migrations",
+        "--django-settings-module=<code_star>.settings"
+    ],
+    "cSpell.words": [
+        "cloudinary"
+    ],
+
 }
