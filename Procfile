@@ -1,1 +1,1 @@
-web: gunicorn dnlbowers-codestar.wsgi
+web: gunicorn code_star.wsgi
